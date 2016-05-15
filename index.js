@@ -13,5 +13,3 @@ inline.onCommand((type, payload) => {
 		inline.sendText(result);
 	}
 });
-
-console.log("test");
