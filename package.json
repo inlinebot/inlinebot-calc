@@ -1,0 +1,34 @@
+{
+  "name": "inlinebot-calc",
+  "version": "0.0.1",
+  "description": "A simple inline bot that echo your messages",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inlinebot/inlinebot-echo.git"
+  },
+  "keywords": [
+    "line",
+    "bot",
+    "api",
+    "node",
+    "node.js",
+    "inline",
+    "sdk",
+    "example",
+    "simple",
+    "echo"
+  ],
+  "author": "Rollables",
+  "license": "ISC",
+  "homepage": "https://github.com/inlinebot/inlinebot-calcs",
+  "dependencies": {
+    "inline-sdk": "~0.0.1",
+    "mathjs": "^3.2.1"
+  },
+  "devDependencies": {}
+}
