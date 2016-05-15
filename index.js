@@ -8,7 +8,12 @@ const inline = new SDK();
 inline.onCommand((type, payload, context) => {
   if (type !== CommandType.MESSAGE) return;
 	const text = payload.args.join(' ');
-	const result = math.eval(text);
+	let result;
+	try {
+		result = math.eval(text);
+	} catch (e) {
+		context.sendText('ยากเกิน');
+	}
 	if (result) {
 		context.sendText(result);
 	}
