@@ -5,11 +5,11 @@ const CommandType = SDK.CommandType;
 
 const inline = new SDK();
 
-inline.onCommand((type, payload) => {
+inline.onCommand((type, payload, context) => {
   if (type !== CommandType.MESSAGE) return;
 	const text = payload.args.join(' ');
 	const result = math.eval(text);
 	if (result) {
-		inline.sendText(result);
+		context.sendText(result);
 	}
 });
